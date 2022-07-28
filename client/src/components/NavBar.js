@@ -1,4 +1,4 @@
-import "./topbar.css"
+import "../styles/navbar.css"
 
 export default function TopBar() {
     return (
