@@ -2,8 +2,8 @@ import "../styles/posts.css"
 
 export default function Posts(){
     return (
-        <div>
-
+        <div className="posts">
+            helloimposts
         </div>
     )
 }

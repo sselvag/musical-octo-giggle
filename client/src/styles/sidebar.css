@@ -6,7 +6,6 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .sidebarItem {
@@ -29,6 +28,26 @@
     text-align: center;
 }
 
-.phimage {
-    width: 400px;
+.sidebarItem > img {
+    margin-top: 15px;
+    max-height: auto;
+    max-width: 180px;
+}
+
+.sidebarItem > p {
+    padding: 30px;
+}
+
+.sidebarSocial {
+    margin-top: 15px;
+    width: 250px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarIcon {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
 }
