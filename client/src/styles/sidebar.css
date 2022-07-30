@@ -28,13 +28,13 @@
     text-align: center;
 }
 
-.sidebarItem > img {
+.sidebarimg {
     margin-top: 15px;
     max-height: auto;
-    max-width: 180px;
+    max-width: 230px;
 }
 
-.sidebarItem > p {
+.sidebarDesc {
     padding: 30px;
 }
 

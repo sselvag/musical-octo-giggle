@@ -18,7 +18,6 @@ export default function NavBar() {
                     <li className="topListItem">LOGOUT</li>
                 </ul>
             </div>
-
             <div className="topRight">
                 <img className="topImage" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png" alt="Profile Picture" />
                 <i className="topSearchIcon fas fa-search"></i>
