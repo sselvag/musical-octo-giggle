@@ -1,6 +1,6 @@
 import "../styles/posts.css"
 
-export default function Sidebar(){
+export default function Posts(){
     return (
         <div>
 

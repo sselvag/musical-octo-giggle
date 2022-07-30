@@ -1,6 +1,6 @@
 import "../styles/navbar.css"
 
-export default function TopBar() {
+export default function NavBar() {
     return (
         <div className="top">
             <div className="topLeft">
