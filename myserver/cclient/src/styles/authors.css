@@ -1,22 +1,22 @@
-.post {
+/* .authors {
     width: 385px;
     margin:0px 25px 40px 25px;
 }
 
-.postImg{
+.authorsImg{
     width: auto;
     height: 280px;
     object-fit: cover;
     border-radius: 7px;
 }
 
-.postInfo {
+.authorsInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.postTitle {
+.authorsName {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-.postDate {
+.authorsDesc {
     font-family: "Lora", serif;
     font-style: italic;
     font-size: 13px;
@@ -32,7 +32,7 @@
     margin-top: 15px;
 }
 
-.postDesc {
+.authorsEmail {
     font-family: "Varela Round", sans-serif;
     font-size: 14px;
     color: #444;
@@ -43,4 +43,4 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-}
+} */
