@@ -4,7 +4,7 @@ import "../styles/single.css"
 
 export default function Single(){
     return (
-        <div className="single">
+        <div class="single">
             {/* post */}
             <SinglePost/>
             <Sidebar/>
