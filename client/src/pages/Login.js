@@ -5,8 +5,8 @@ export default function Login () {
         <div class="login">
             <form class="loginForm">
                 <span class="loginTitle">Login</span>
-                <label class="loginLabel">Email</label>
-                <input class="loginInput" type="text" placeholder="Email"/>
+                <label class="loginLabel">Username</label>
+                <input class="loginInput" type="text" placeholder="Username"/>
                 <label class="loginLabel">Password</label>
                 <input class="loginInput" type="password" placeholder="Password"/>
                 <button class="loginButton">Login</button>
