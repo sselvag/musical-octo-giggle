@@ -2,21 +2,21 @@ import "../styles/singlePost.css"
 
 export default function SinglePost() {
     return (
-        <div className="singlePost">
-            <div className="singlePostWrapper">
-                <img className="singlePostImg" src="https://www.cityworks.com/wp-content/uploads/2022/05/placeholder.png" alt="Placeholder Image"></img>
-                <h1 className="singlePostTitle">
+        <div class="singlePost">
+            <div class="singlePostWrapper">
+                <img class="singlePostImg" src="https://www.cityworks.com/wp-content/uploads/2022/05/placeholder.png" alt="Placeholder Image"></img>
+                <h1 class="singlePostTitle">
                     Title afjijeh fajeifao
-                    <div className="singlePostIcons">
-                        <i id="editIcon" className="far fa-edit"></i>
-                        <i id="deleteIcon" className="far fa-trash-alt"></i>
+                    <div class="singlePostIcons">
+                        <i id="editIcon" class="far fa-edit"></i>
+                        <i id="deleteIcon" class="far fa-trash-alt"></i>
                     </div>
                 </h1>
-                <div className="singlePostInfo">
-                    <span className="singlePostAuthor">Author: <b>Swaathy</b></span>
-                    <span className="singlePostDate">Yesterday</span>
+                <div class="singlePostInfo">
+                    <span class="singlePostAuthor">Author: <b>Swaathy</b></span>
+                    <span class="singlePostDate">Yesterday</span>
                 </div>
-                <p className="singlePostDesc">
+                <p class="singlePostDesc">
                 Lorem ipsum dolor sit amet. Ut esse rerum aut obcaecati eligendi sed dicta voluptatum qui quod libero vel enim illo id sapiente perspiciatis est vitae 
                 tenetur? Aut dolores illo sed voluptatem ipsum et provident consectetur non ratione commodi quo sapiente libero a tenetur asperiores. Ut totam eligendi 
                 et tenetur Quis est voluptate harum ut veritatLorem ipsum dolor sit amet. Ut esse rerum aut obcaecati eligendi sed dicta voluptatum qui quod libero vel 
