@@ -98,6 +98,36 @@ const mutation = new GraphQLObjectType({
                 return post.save();
             },
         },
+        deletePost: {
+            type: PostType,
+            args: {
+                id: { type: GraphQLNonNull(GraphQLID) },
+            },
+            resolve(parent, args) {
+                return Post.findByIdAndRemove(args.id);
+            }
+        },
+        updatePost: {
+            type: PostType,
+            args: {
+                id: { type: GraphQLNonNull(GraphQLID) },
+                title: { type: GraphQLNonNull(GraphQLString) },
+                description: { type: GraphQLNonNull(GraphQLString) },
+                publishedDate: { type: GraphQLNonNull(GraphQLString) },
+            },
+            resolve(parent, args) {
+                return Post.findByIdAndUpdate(
+                    args.id,
+                    {
+                        $set: {
+                            title: args.title,
+                            description: args.description,
+                            publishedDate: args.publishedDate,
+                        }
+                    }
+                )
+            }
+        },
     },
 });
 
