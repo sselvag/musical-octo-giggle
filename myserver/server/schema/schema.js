@@ -21,10 +21,9 @@ const PostType = new GraphQLObjectType({
             type: AuthorType,
             resolve(parent, args) {
                 return Author.findById(parent.authorId);
-                // or is it authors
             }
         },
-        name: { type: GraphQLString },
+        title: { type: GraphQLString },
         publishedDate: { type: GraphQLString },
         description: {type: GraphQLString},
     })
@@ -78,10 +77,29 @@ const mutation = new GraphQLObjectType({
                 });
 
                 return author.save();
-            }
-        }
-    }
-})
+            },
+        },
+        addPost: {
+            type: PostType,
+            args: {
+                title: { type: GraphQLNonNull(GraphQLString) },
+                description: { type: GraphQLNonNull(GraphQLString) },
+                publishedDate: { type: GraphQLNonNull(GraphQLString) },
+                authorId: { type: GraphQLNonNull(GraphQLString) },
+            },
+            resolve(parent,args) {
+                const post = new Post({
+                    title: args.title,
+                    description: args. description,
+                    publishedDate: args.publishedDate,
+                    authorId: args.authorId,
+                });
+    
+                return post.save();
+            },
+        },
+    },
+});
 
 module.exports = new GraphQLSchema({
     query: RootQuery,
