@@ -1,12 +1,18 @@
 import {FaTrash} from 'react-icons/fa';
+import { useMutation } from '@apollo/client';
+import { DELETE_AUTHOR } from '../mutations/authorMutations';
 
 export default function AuthorRow({ author }) {
+    const [deleteAuthor] = useMutation(DELETE_AUTHOR, {
+        variables: { id: author.id },
+    });
+
     return (
         <tr>
             <td>{ author.name }</td>
             <td>{ author.email }</td>
             <td>
-                <button>
+                <button onClick={deleteAuthor}>
                     <FaTrash/>
                 </button>
             </td>
