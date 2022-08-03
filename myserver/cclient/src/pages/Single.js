@@ -5,7 +5,6 @@ export default function Single(){
     return (
         <>
             <div class="single">
-                {/* post */}
                 <SinglePost/>
             </div>
         </>

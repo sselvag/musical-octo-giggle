@@ -9,7 +9,7 @@ const AuthorType = new GraphQLObjectType({
     fields: () => ({
         id: { type: GraphQLID },
         name: { type: GraphQLString },
-        email: { type: GraphQLString }
+        username: { type: GraphQLString }
     })
 });
 
@@ -68,12 +68,12 @@ const mutation = new GraphQLObjectType({
             type:AuthorType,
             args: {
                 name: { type: GraphQLNonNull(GraphQLString) },
-                email: { type: GraphQLNonNull(GraphQLString) },
+                username: { type: GraphQLNonNull(GraphQLString) },
             },
             resolve(parent, args) {
                 const author = new Author({
                     name: args.name,
-                    email: args.email
+                    username: args.username
                 });
 
                 return author.save();
