@@ -5,6 +5,7 @@ import Write from "./pages/Write";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Authors from "./components/Authors";
+import Posts from "./components/Posts";
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -53,6 +54,8 @@ function App() {
             <Route path='/write' element={<Write/>} />
 
             <Route path='/post/:postId' element={<Single/>} />
+
+            <Route path='/posts' element={<Posts/>} />
 
           </Routes>
         </>
