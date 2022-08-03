@@ -1,1 +1,0 @@
-const {gql} = require('applollo-server-express');
