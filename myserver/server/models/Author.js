@@ -4,7 +4,7 @@ const AuthorSchema = new mongoose.Schema({
     name: {
         type: String,
     },
-    email: {
+    username: {
         type: String,
     }
 });
