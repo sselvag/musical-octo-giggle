@@ -15,10 +15,8 @@ const resolvers = {
         users: async () => {
             return User.find({})
         },
-
-        //Find User by _id
-        user: async (parent, {id}) => {
-            return User.findById(id).populate('users')
+        post: async (parent, { postId }) => {
+            return Post.findOne({ _id: postId});
         },
 
         //Find All of a Users Posts
