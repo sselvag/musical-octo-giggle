@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
-import Single from "./pages/Single";
+import SinglePost from "./components/SinglePost";
 import Write from "./pages/Write";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -53,7 +53,7 @@ function App() {
 
             <Route path='/write' element={<Write/>} />
 
-            <Route path='/post/:postId' element={<Single/>} />
+            <Route path='/posts/posts:id' element={<SinglePost/>} />
 
             <Route path='/posts' element={<Posts/>} />
 

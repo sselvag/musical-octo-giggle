@@ -11,4 +11,19 @@ const GET_POSTS = gql`
     }
 `;
 
-export { GET_POSTS };
+const GET_POST = gql`
+    query getPost($id: ID!) {
+        post(id: $id) {
+            id
+            title
+            author {
+                name
+                username
+            }
+            publishedDate
+            description
+        }
+    }
+`;
+
+export { GET_POSTS, GET_POST };
