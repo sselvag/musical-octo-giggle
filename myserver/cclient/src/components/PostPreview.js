@@ -5,7 +5,7 @@ export default function Post({ post }) {
     return (
         <>
             <div class="post">
-                <Link class="link" to='/post/:postId'>
+                <Link class="link" to='/posts/posts:id'>
                     <img class="postImg" src="https://www.candorblog.com/wp-content/uploads/2017/05/travel-022.jpg" alt="Blogpost Image"></img>
                     <div class="postInfo">
                         <span class="postTitle">{post.title}</span>

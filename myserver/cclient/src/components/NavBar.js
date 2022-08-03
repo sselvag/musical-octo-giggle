@@ -8,7 +8,7 @@ export default function NavBar() {
                 <div classe="topCentre">
                     <ul class="topList">
                         <li class="topListItem"><Link class="link" to='/'>HOME</Link></li>
-                        <li class="topListItem"><Link class="link" to='/authors'>AUTHORS</Link></li>
+                        {/* <li class="topListItem"><Link class="link" to='/authors'>AUTHORS</Link></li> */}
                         <li class="topListItem"><Link class="link" to='/write'>WRITE</Link></li>
                         <li class="topListItem"><Link class="link" to='/login'>LOGIN</Link></li>
                         <li class="topListItem"><Link class="link" to='/register'>REGISTER</Link></li>

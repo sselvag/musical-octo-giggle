@@ -10,29 +10,8 @@
     z-index: 999;
 }
 
-.topLeft,.topRight {
-    flex: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .topCentre {
     flex: 6;
-}
-
-.topIcon{
-    font-size: 20px;
-    margin-right: 10px;
-    color: #4444;
-    cursor: pointer;
-}
-
-.topImage{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .topList {
@@ -48,11 +27,4 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
-}
-
-.topSearchIcon {
-    font-size: 18px;
-    color: #666;
-    cursor: pointer;
-    margin-left: 18px;
 }

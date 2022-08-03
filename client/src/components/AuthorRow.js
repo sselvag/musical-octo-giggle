@@ -1,3 +1,4 @@
+// import { GET_AUTHORS } from '../queries/authorQueries';
 
 export default function AuthorRow({ author }) {
 
