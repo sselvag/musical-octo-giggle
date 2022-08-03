@@ -6,7 +6,7 @@ const resolvers = {
             return Post.find().sort({ createdAt: -1 });
         },
         post: async (parent, { postId }) => {
-            return Post.findone({ _id: postId});
+            return Post.findOne({ _id: postId});
         },
     },
 
