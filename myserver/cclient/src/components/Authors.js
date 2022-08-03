@@ -16,7 +16,7 @@ export default function Authors() {
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Email</th>
+                        <th>Username</th>
                         <th></th>
                     </tr>
                 </thead>

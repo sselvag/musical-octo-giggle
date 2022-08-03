@@ -1,4 +1,4 @@
-import { GET_AUTHORS } from '../queries/authorQueries';
+// import { GET_AUTHORS } from '../queries/authorQueries';
 
 export default function AuthorRow({ author }) {
 
@@ -6,7 +6,7 @@ export default function AuthorRow({ author }) {
         <>
             <tr>
                 <td>{ author.name }</td>
-                <td>{ author.email }</td>
+                <td>{ author.username }</td>
             </tr>
         </>
     );

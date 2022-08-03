@@ -5,7 +5,7 @@ const GET_AUTHORS = gql`
         authors {
             id
             name
-            email
+            username
         }
     }
 `;
