@@ -12,8 +12,10 @@ export default function Register () {
     const [password, setPassword] = useState('');
 
     const [addAuthor] = useMutation(ADD_AUTHOR, {
-        variables: { name, username, password},
+        variables: { name, username},
         update(cache, { data: { addAuthor } }) {
+
+            // It's not reading line 17. Here is the error
             const { authors } = cache.readQuery({ query: GET_AUTHORS });
 
             cache.writeQuery({
@@ -30,7 +32,7 @@ export default function Register () {
             return alert('Please fill in all fields!');
         }
 
-        addAuthor(name, username, password);
+        addAuthor(name, username);
 
         setName('');
         setUsername('');
